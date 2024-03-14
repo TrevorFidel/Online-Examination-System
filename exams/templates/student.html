@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="text-center">
+    <h3>Hello Student,</h3>
+    <p>and Welcome to Online Examination System</p><br><br>
+    <hr>
+    <form action="">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" name="submit">SUBMIT</button>
+    </form>
+    <br>
+    <h6>Select any of them to access into the system</h6>
+    <button class=" btn btn-info">Create Your Account</button>
+    <button class="btn btn-success">Login Now</button>
+
+
+</section><br>
+<section>
+     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Online Examination System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+</section>
+{% endblock %}

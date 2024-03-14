@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<section class="text-center">
+    <h3>Hello teacher3,</h3>
+    <form action="">
+        {{form.as_p}}
+        <button type="submit" name="submit">SUBMIT</button>
+    </form>
+    <p>Your Account has not been <span class="fw-bold">ACTIVATED</span> yet!</p><br><br>
+    <p>Waiting for approval from Administrator</p><br><br>
+    <p>and soon you will be able to access your account after approval</p><br>
+    <hr>
+    <br>
+    <button class="btn btn-danger" type="button">Logout Now</button>
+</section><br><br>
+<section class="nav3">
+ <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Online Examination System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+</section>
+{% endblock %}
+
